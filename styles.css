@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white; /* Full white background for the entire page */
+}
+
+/* Header Styling */
+.header {
+    width: 100%;
+    background-color:#ffd4e5; /* Keep the header dark */
+    color: #be2e59;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #be2e59;
+}
+
+/* Main Content Area Styling */
+.home-main {
+    flex: 1; /* Takes available space between header and footer */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    padding: 20px; /* Adds padding around the content */
+    background-color: white; /* Ensures the main area is white */
+}
+
+/* Centered Content Styling */
+.home-content {
+    background-color: white; /* White background for the centered content */
+    padding: 40px; /* Padding inside the content area */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    max-width: 800px; /* Limit width for readability */
+    width: 100%; /* Ensures content can stretch fully within the container */
+    text-align: center; /* Center align text within */
+}
+
+/* Footer Styling */
+.footer {
+    width: 100%;
+    background-color: #ffd4e5; /* Keep the footer dark */
+    color: #be2e59;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Main Content Area Styling */
+.about-main {
+    flex: 1; /* Takes available space between header and footer */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    padding: 20px; /* Adds padding around the content */
+}
+
+/* Centered Content Styling */
+.about-content {
+    background-color: white; /* White background for the centered content */
+    padding: 40px; /* Padding inside the content area */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    max-width: 800px; /* Limit width for readability */
+    width: 100%; /* Makes the content full-width within the max-width */
+    text-align: center; /* Center align text within */
+}
+
+
+
+
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* styles.css */
+
+
+
+.skills-section {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section h2 {
+    text-align: center;
+    color: #050505;
+}
+
+.skills-list {
+    list-style: bulletpoint;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-bottom: 15px;
+}
+
+.skills-list li strong {
+    color: #080808;
+    font-size: 1.1em;
+}
+
+.skills-list p {
+    margin: 5px 0 0;
+    color: #030303;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
