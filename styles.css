@@ -10,16 +10,18 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: white; /* Full white background for the entire page */
+    background-color: rgb(255, 255, 255); /* Full white background for the entire page */
 }
 
 /* Header Styling */
 .header {
-    width: 100%;
     background-color:#ffd4e5; /* Keep the header dark */
+    background-position: center;
     color: #be2e59;
-    padding: 15px 0;
+    padding: 10px 0;
     text-align: center;
+    
+    
 }
 
 .navbar {
@@ -53,6 +55,7 @@ body {
     align-items: center; /* Centers content vertically */
     padding: 20px; /* Adds padding around the content */
     background-color: white; /* Ensures the main area is white */
+
 }
 
 /* Centered Content Styling */
@@ -80,7 +83,7 @@ body {
     flex: 1; /* Takes available space between header and footer */
     display: flex;
     justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
+    align-items: center; /* Centers content vertically *
     padding: 20px; /* Adds padding around the content */
 }
 
@@ -94,8 +97,6 @@ body {
     width: 100%; /* Makes the content full-width within the max-width */
     text-align: center; /* Center align text within */
 }
-
-
 
 
 /* Animation */
@@ -180,7 +181,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
 }
 
 /* Header Styling */
@@ -248,4 +249,410 @@ body {
     padding: 15px 0;
 }
 
+
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+
+/* Header Styling */
+.header {
+    width: 100%;
+    background-color:#ffd4e5; /* Keep the header dark */
+    color: #be2e59;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Main Container */
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Container for Skills and Education */
+.skills-education-container {
+    display: flex;
+    flex-wrap: wrap; /* For responsiveness on smaller screens */
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Individual Text Box Styling */
+.text-box {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%; /* Side-by-side width */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Achievement Box Styling */
+.achievement-box {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 95%; /* Wider box */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Bullet Points Styling */
+ul {
+    list-style-type: disc;
+    padding-left: 0;
+    margin: 10px 0;
+    text-align: left; /* Align bullet points to the left */
+    display: inline-block; /* Center the entire list */
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    background-color: #ffd4e5; /* Keep the footer dark */
+    color: #be2e59;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .text-box {
+        width: 100%; /* Full width on small screens */
+    }
+    .achievement-box {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the footer is at the bottom */
+    background-color: #ffffff;
+}
+
+/* Header Styling */
+.header {
+    width: 100%;
+    background-color: #ffd4e5; /* Keep the footer dark */
+    color: #be2e59;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #be2e59;
+  
+}
+
+/* Main Content Styling */
+.content-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Row for Skills, Achievements, and Education */
+.skills-achievements-education-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+/* Content Box Styling */
+.content-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Centered List Styling */
+.centered-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.centered-list li {
+    margin-left: 20px;
+}
+
+/* Achievements Section Styling (Wider Box) */
+.achievements-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px; /* Wider box for Achievements */
+}
+
+/* Achievement Images Styling */
+.achievement-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.achievement-images img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Footer Styling */
+.footer {
+    width: 100%;
+    background-color: #ffd4e5; /* Keep the footer dark */
+    color: #be2e59;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-achievements-education-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .achievements-box, .content-box {
+        max-width: 100%;
+    }
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Header Styling */
+.header {
+    width: 100%;
+    background-color: #ffd4e5; /* Keep the footer dark */
+    color: #be2e59;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color:#be2e59;
+}
+
+/* Main Content Styling */
+.content-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Row for Skills and Education */
+.skills-education-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+/* Skills and Education Box Styling */
+.content-box {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+    /* Auto height adjustment based on content */
+    height: auto;
+    /* Overflow hidden ensures no excess space is shown */
+    overflow: hidden;
+}
+
+/* Specific Styling for Skills Section */
+.skills-section {
+    max-height: 220px; /* Adjust this value based on your content */
+    overflow: hidden;
+}
+
+/* Specific Styling for Education Section */
+.education-section {
+    max-height: 220px; /* Adjust this value based on your content */
+    overflow: hidden;
+}
+
+/* Centered List Styling */
+.centered-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.centered-list li {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+/* Footer Styling */
+.footer {
+    width: 100%;
+    background-color: #ffd4e5; /* Keep the footer dark */
+    color:#be2e59;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-education-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-box {
+        max-width: 100%;
+    }
+}
+
+/* Basic styling for the contact page */
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+   
+
+    /* Header Styling */
+    .header {
+    width: 100%;
+    background-color:#ffd4e5; /* Keep the header dark */
+    color: #be2e59;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-container {
+    text-align: center;
+}
+
+.social-links {
+    display: flex;           /* Make icons align horizontally */
+    justify-content: center;  /* Center icons horizontally */
+    align-items: center;      /* Center icons vertically */
+    gap: 20px;                /* Space between icons */
+    margin-top: 10px;
+}
+
+/* Individual icon styles with original colors */
+.icon {
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
 
